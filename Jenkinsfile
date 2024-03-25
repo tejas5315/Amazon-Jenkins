@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent linuxslave
     stages {
 
         stage('pull') {
