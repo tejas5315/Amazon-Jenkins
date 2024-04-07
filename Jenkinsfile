@@ -18,7 +18,12 @@ pipeline {
             }
         }
     }
-    
+    stage ("build images"){
+        steps {
+            sh 'docker build .'
+        }
+    }
+}
   post{
     
   failure{
