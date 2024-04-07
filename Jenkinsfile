@@ -1,4 +1,4 @@
-pipeline {
+    pipeline {
     agent any
     stages {
 
@@ -18,7 +18,7 @@ pipeline {
             }
         }
     }
-    stage ('build images'){
+            stage ('build images'){
         steps {
             sh 'docker build .'
         }
