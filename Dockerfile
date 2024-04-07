@@ -7,7 +7,7 @@ RUN apt-get install -y tar
 RUN tar -xvf apache-tomcat-9.0.87.tar.gz
 RUN cd apache-tomcat-9.0.87
 WORKDIR apache-tomcat-9.0.87/
-COPY /var/lib/jenkins/workspace/Jenkinsfile/Amazon-Core/target/Amazon-Core-1.0-SNAPSHOT.jar ./webapps/
+COPY /absolute/path/to/Amazon-Core-1.0-SNAPSHOT.jar ./webapps/
 EXPOSE 8080
 RUN cd ./bin
 CMD ["catalina.sh", "run"]
