@@ -17,7 +17,7 @@
                  sh 'mvn clean install'
             }
         }
-    }
+    
             stage('buildimages') {
         steps {
             sh 'cp target/Amazon.war .'
