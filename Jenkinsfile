@@ -18,7 +18,7 @@
             }
         }
     }
-            stage ('buildimages') {
+            stage('buildimages') {
         steps {
             sh 'cp target/Amazon.war .'
             sh 'docker build - newimahe .'
