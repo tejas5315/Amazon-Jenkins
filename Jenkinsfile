@@ -18,7 +18,7 @@
             }
         }
     }
-            stage ('build images'){
+            stage ('buildimages') {
         steps {
             sh 'docker build .'
         }
