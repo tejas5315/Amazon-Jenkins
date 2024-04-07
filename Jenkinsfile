@@ -20,8 +20,8 @@
     
             stage('buildimages') {
         steps {
-            sh 'cp target/Amazon.war .'
-            sh 'docker build - newimahe .'
+            sh 'cp /var/lib/jenkins/workspace/Jenkinsfile/Amazon-Core/target/Amazon-Core-1.0-SNAPSHOT.jar .'
+            sh 'docker build -t newimage .'
         }
     }
 }
